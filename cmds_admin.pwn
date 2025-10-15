@@ -3889,7 +3889,7 @@ CMD:adveh(playerid, params[])
 alias:setadminname("setaname")
 CMD:setadminname(playerid, params[])
 {
-	if(AccountData[playerid][pAdmin] < 6) return PermissionError(playerid);
+	if(AccountData[playerid][pAdmin] < 7) return PermissionError(playerid);
 
 	new aname[100], otherid;
 	if(sscanf(params, "us[100]", otherid, aname)) return ShowTDN(playerid, NOTIFICATION_SYNTAX, "/setadminname [name/playerid] [admin name]");
